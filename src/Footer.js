@@ -12,6 +12,7 @@ class Footer extends Component {
             <TopProducts heading="Top Products" classname="footer-block footer-navigation" />
             <NewsLetter heading="Newsletter" content="You can trust us. we only send promo offers, not a single spam." classname="footer-block newsletter-block" />
             <InstagramFeed heading="Instagram Feed" classname="footer-block instagram-block" />
+            <p>Copyright ©2018 All rights reserved.</p>
           </div>
         </footer>  
     );
