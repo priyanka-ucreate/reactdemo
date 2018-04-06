@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import callaction from './callaction-bg.png';
 import './App.css';
 
 class CallAction extends Component {
