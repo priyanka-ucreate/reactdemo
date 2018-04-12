@@ -18,6 +18,12 @@ class Header extends Component {
 		});
    }
 
+   onClose(){
+        this.setState({
+      isModalOpen: false
+    });
+   }
+
   render() {
     return (
         <header className="App-header">
