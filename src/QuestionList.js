@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import ListItem from './ListItem';
 import './App.css';
 
 
-class QuestionList extends Component {
+export default class QuestionList extends Component {
   render() {
-    const numbers = this.props.numbers;
-    const listItems = numbers.map((number) => 
-    <ListItem key={number.toString()} value={number} />
+    const listItems = this.props.data.map((item) =>
+    <div className="col-xs-12 col-sm-6 m-b-30">
+      <div className="col_services">
+        <h3>{item.label}</h3>
+        <p>{item.value}</p>
+      </div>
+    </div>
   );
 
     return (
@@ -17,5 +20,3 @@ class QuestionList extends Component {
     );
   }
 }
-
-export default QuestionList;
