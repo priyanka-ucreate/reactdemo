@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import InstagramImage1 from './i1.png';
-import InstagramImage2 from './i2.png';
-import InstagramImage3 from './i3.png';
-import InstagramImage4 from './i4.png';
+import InstagramImage1 from './images/i1.png';
+import InstagramImage2 from './images/i2.png';
+import InstagramImage3 from './images/i3.png';
+import InstagramImage4 from './images/i4.png';
 import './App.css';
 
 class InstagramFeed extends Component {

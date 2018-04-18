@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ServiceBlock from './ServiceBlock';
-import serviceicon1 from './s1.png';
-import serviceicon2 from './s2.png';
-import serviceicon3 from './s3.png';
-import serviceicon4 from './s4.png';
+import serviceicon1 from './images/s1.png';
+import serviceicon2 from './images/s2.png';
+import serviceicon3 from './images/s3.png';
+import serviceicon4 from './images/s4.png';
 import './App.css';
 
 class Services extends Component {

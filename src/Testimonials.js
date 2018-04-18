@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import TestimonialBlock from './TestimonialBlock';
-import testimonialicon1 from './t1.png';
-import testimonialicon2 from './t2.png';
-import testimonialicon3 from './t3.png';
+import testimonialicon1 from './images/t1.png';
+import testimonialicon2 from './images/t2.png';
+import testimonialicon3 from './images/t3.png';
 import './App.css';
 
 class Testimonials extends Component {

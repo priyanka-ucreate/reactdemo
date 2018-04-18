@@ -4,7 +4,7 @@ import './App.css';
 class Banner extends Component {
   render() {
     return (
-        <section className="App-banner">
+        <section className={this.props.classname}>
           <div className="container">
             <div className="banner-text">
             <h1>{this.props.heading}</h1>
