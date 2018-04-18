@@ -378,3 +378,23 @@ form {
     float: left;
     font-weight: 700;
 }
+.faq-block h3 {
+    margin: 0 0 20px 0;
+    color: #df003a;
+}
+.faq-block p {
+    color: #555;
+    text-align: left;
+    line-height: 26px;
+}
+.faq-block:nth-child(2n+1) {
+    margin-right: 4%;
+}
+.faq-block {
+    float: left;
+    width: 48%;
+    background: rgba(250, 249, 255, 0.61);
+    border: 1px solid #eee;
+    padding: 25px;
+    margin-bottom: 40px;
+}

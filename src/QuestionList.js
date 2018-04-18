@@ -5,11 +5,9 @@ import './App.css';
 export default class QuestionList extends Component {
   render() {
     const listItems = this.props.data.map((item) =>
-    <div className="col-xs-12 col-sm-6 m-b-30">
-      <div className="col_services">
+      <div className="faq-block">
         <h3>{item.label}</h3>
         <p>{item.value}</p>
-      </div>
     </div>
   );
 
