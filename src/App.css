@@ -347,7 +347,7 @@ form {
     font-weight: 500;
     line-height: 42px;
     text-decoration: none;
-    border: none !important;
+    border: 1px solid #df003a !important;
     width: initial;
     font-size: 18px;
     font-weight: 700;
