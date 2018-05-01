@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import axios from 'axios'
 
 class Modal extends Component {
 	constructor(props) {
@@ -41,7 +42,11 @@ class Modal extends Component {
     }
 
 
-    formSubmit(event){
+    formSubmit(){
+
+        axios.get('https://api.github.com/users/'+ this.state.fname +'')
+        .then(response => console.log(response))
+
     	if (this.state.fname === ''){
     	this.setState({ferror: 'Please enter first name'});
     	}
@@ -49,7 +54,7 @@ class Modal extends Component {
     	this.setState({lerror: 'Please enter last name'});
     	}
     	else if (this.state.email === ''){
-    	this.setState({emailerror: 'Please enter last name'});
+    	    this.setState({emailerror: 'Please enter email address'});
     	}
     	else{
     	alert('Hello: ' + this.state.fname + ' ' + this.state.lname + '\n' + 'Your Email Address is:' + this.state.email);
