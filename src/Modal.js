@@ -11,7 +11,9 @@ class Modal extends Component {
         	lname: '', 
         	lerror: '', 
         	email: '', 
-        	emailerror: ''
+        	emailerror: '',
+					username: '',
+					profileimage: '',
         };
 
         this.fnameChange = this.fnameChange.bind(this);	
@@ -45,7 +47,13 @@ class Modal extends Component {
     formSubmit(){
 
         axios.get('https://api.github.com/users/'+ this.state.fname +'')
-        .then(response => console.log(response))
+				 .then((response) => {
+					 console.log(response)
+					 this.setState({
+						 username: response.data.name,
+						 profileimage: response.data.avatar_url
+					 })
+				 });
 
     	if (this.state.fname === ''){
     	this.setState({ferror: 'Please enter first name'});
@@ -63,7 +71,7 @@ class Modal extends Component {
 
   render() {
     return (
-      <div>
+      <div className="modal-inner-wrap">
         <div className="form-group">        
           <input name="fname" value={this.state.fname} onChange={this.fnameChange} placeholder="First Name" type="text" />
           <span className="error-msg">{this.state.ferror}</span>
@@ -77,6 +85,11 @@ class Modal extends Component {
           <span className="error-msg">{this.state.emailerror}</span>
         </div>
           <input type="button" className="nw-btn primary-btn" onClick={this.formSubmit} value="Submit"/>
+					<div className="user-info-wrap">
+						<div className="img-wrap"><img src={this.state.profileimage} /></div>
+						<div className="info-wrap"><p>{this.state.username}</p></div>
+					</div>
+					
       </div>    
     );
   }

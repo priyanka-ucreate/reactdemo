@@ -312,12 +312,14 @@ form {
 :focus {
     outline: 0px;
 }
+.modal-inner-wrap{width: 100%; float: left;}
 .modal-popup .modal-inner {
     width: 700px;
     margin: 180px auto 0;
     float: none;
     background: #fff;
     height: initial;
+    display: flex;  
     padding: 40px;
     text-align: center;
     position: relative;
@@ -431,4 +433,27 @@ span.error-msg {
     margin-top: 4px;
     float: left;
     width: 100%;
+}
+.img-wrap {
+    float: left;
+    width: 170px;
+}
+
+.user-info-wrap {
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.img-wrap img {
+    width: 100%;
+}
+.info-wrap {
+    float: right;
+    width: calc(100% - 200px);
+}
+
+.info-wrap p {
+    text-align: left;
+    color: #000;
 }
